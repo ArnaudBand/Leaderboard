@@ -1,8 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# ToDo List
+# Leaderboard
 
-> This "To-do-list" app is a simple web application that displays a list of task and allows you to add and remove task from that list. it is built with the latest technology including but not limited to HTML, CSS, JavaScript and webpack to manipulate DOM.
+> Leaderboard is a project featuring ES6 syntax including async code with API calls, modules and webpack.
 
 
 ## Built With
@@ -21,13 +21,11 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisite
 
-clone repo: `https://github.com/ArnaudBand/webpack_toDo_list.git`
+ ```bash
+ https://github.com/ArnaudBand/webpack_toDo_list.git
+```
 
 A Web Browser (preferably Google Chrome)
-
-### Live
-
-Live demo: [Todo_list](https://arnaudband.github.io/Microverse-_Todo_list/dist/)
 
 ### Setup
 

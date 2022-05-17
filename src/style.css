@@ -1,7 +1,68 @@
-body {
-    background-color: bisque;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.hello {
-    color: red;
-  }
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  width: 900px;
+  margin: 100px auto;
+}
+
+.header_title {
+  margin-left: 30px;
+  margin-bottom: 40px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+.flex-direction {
+  flex-direction: column;
+}
+
+.left-space {
+  margin-left: 100px;
+}
+
+.btn {
+  padding: 5px;
+  background-color: white;
+  box-shadow: 2px 2px 5px #000;
+}
+
+.title_flex {
+  margin-bottom: 20px;
+}
+
+.border_div {
+  border: 2px solid #000;
+}
+
+.col_1 {
+  padding: 10px;
+}
+
+.backColor {
+  background-color: rgba(0, 0, 0, 0.247);
+}
+
+.input_div input {
+  padding: 10px;
+  padding-right: 50px;
+  border: 2px solid #000;
+}
+
+#score {
+  margin: 20px 0;
+}
+
+.submit_btn {
+  margin-left: 80%;
+}

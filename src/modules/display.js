@@ -1,6 +1,6 @@
 const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/bCZxO4pdTbCdS1aVPCpA/scores/';
 
-const updateDom = (users) => {
+const displayUI = (users) => {
   const borderDiv = document.querySelector('.border_div');
   borderDiv.innerHTML = '';
   users.forEach((user) => {
@@ -11,17 +11,17 @@ const updateDom = (users) => {
   });
 };
 
-const fetchUsers = async () => {
+const fetchData = async () => {
   const data = await fetch(url);
   return data.json();
 };
 
-const insertUsers = async () => {
-  const users = await fetchUsers();
-  updateDom(users.result);
+const insertData = async () => {
+  const users = await fetchData();
+  displayUI(users.result);
 };
 
-const addUser = async (data) => {
+const callApi = async (data) => {
   await fetch(url, {
     method: 'POST',
     headers: {
@@ -35,7 +35,7 @@ const scoreForm = document.querySelector('#submit_btn');
 const refreshButton = document.querySelector('.left-space');
 
 refreshButton.addEventListener('click', () => {
-  insertUsers();
+  insertData();
 });
 
 scoreForm.addEventListener('click', async (e) => {
@@ -45,8 +45,8 @@ scoreForm.addEventListener('click', async (e) => {
   const form = document.querySelector('.input_div');
 
   if (name !== '' && score !== '') {
-    await addUser([name, score]);
-    insertUsers();
+    await callApi([name, score]);
+    insertData();
   }
   form.reset();
 });

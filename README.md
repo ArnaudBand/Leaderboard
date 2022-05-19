@@ -15,7 +15,7 @@
 
 # Live
 
-[live](https://arnaudband.github.io/Leaderboard/)
+[live](https://arnaudband.github.io/Leaderboard/dist)
 
 
 ## Getting Started

@@ -6,7 +6,7 @@ const displayUI = (users) => {
   users.forEach((user) => {
     borderDiv.innerHTML += `
     <div class="col1"> 
-        <p> ${user.user}:${user.score}</p>
+        <p> ${user.user}: gets ${user.score}</p>
     </div>`;
   });
 };

@@ -25,7 +25,7 @@ To get a local copy up and running follow these simple example steps.
 ### Prerequisite
 
  ```bash
- https://github.com/ArnaudBand/webpack_toDo_list.git
+ git@github.com:ArnaudBand/Leaderboard.git
 ```
 
 A Web Browser (preferably Google Chrome)

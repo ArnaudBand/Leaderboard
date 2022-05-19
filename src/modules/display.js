@@ -1,4 +1,4 @@
-const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/qRkDEneUnnhcJLTAxRyb/scores';
+const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/bCZxO4pdTbCdS1aVPCpA/scores/';
 
 const updateDom = (users) => {
   const borderDiv = document.querySelector('.border_div');
@@ -34,10 +34,6 @@ const addUser = async (data) => {
 const scoreForm = document.querySelector('#submit_btn');
 const refreshButton = document.querySelector('.left-space');
 
-window.onload = () => {
-  insertUsers();
-};
-
 refreshButton.addEventListener('click', () => {
   insertUsers();
 });
@@ -46,10 +42,11 @@ scoreForm.addEventListener('click', async (e) => {
   e.preventDefault();
   const name = document.querySelector('#name').value.trim();
   const score = document.querySelector('#score').value.trim();
+  const form = document.querySelector('.input_div');
 
   if (name !== '' && score !== '') {
     await addUser([name, score]);
     insertUsers();
   }
-  e.target.reset();
+  form.reset();
 });

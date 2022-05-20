@@ -1,5 +1,5 @@
 const rain = () => {
-  const amount = 100;
+  const amount = 500;
   const body = document.querySelector('.container');
   let i = 0;
   while (i < amount) {
